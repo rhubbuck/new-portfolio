@@ -12,7 +12,7 @@ const Hero = () => {
                 <h1 className='text-white text-7xl pb-6 font-jakarta font-semibold pl-2 md:pl-0'>Ryan Hubbuck.</h1>
                 <h2 className='text-white font-jakarta text-xl text-center md:text-left md:text-4xl'>- Front-end Developer -</h2>
             </div>
-            <div className='flex flex-row pt-8 md:pt-44 w-full justify-around '>
+            <div className='flex flex-row pt-20 md:pt-44 w-full justify-around '>
                 <Link to='work' spy={true} smooth={true} offset={-120} className='cursor-pointer flex flex-col items-center hover:scale-125 transition-all duration-100 ease-in'>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
