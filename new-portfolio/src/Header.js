@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div className='bg-slate-900 flex justify-between py-6 md:px-32 px-6 fixed w-full z-10 items-center'>
         <div className='flex text-white text-xl items-center'>
-            <Link className='mx-2 border-2 border-pink-400 p-2 cursor-pointer font-jakarta font-bold' to='hero' spy={true} smooth={true} offset={-50}>RH</Link>
+            <Link className='mx-2 border-2 border-[#FF66cc] p-2 cursor-pointer font-jakarta font-bold' to='hero' spy={true} smooth={true} offset={-50}>RH</Link>
         </div>
         <div className='md:block hidden'>
             <ul className='flex flex-row text-white'>
@@ -29,12 +29,12 @@ const Header = () => {
           </svg>
           {showMenu &&
           <div className="mobile-menu fixed right-0 w-full h-full mt-4 background-shade font-jakarta">
-            <div className='bg-white w-3/5 h-full fixed right-0 transition-all duration-200'>
-              <ul className=" text-slate-900 pt-4">
-                <li class="active"><Link to='hero' spy={true} smooth={true} offset={-90} onClick={openMenu} className="block px-2 py-4 underline">Home</Link></li>
-                <li><Link to='about' spy={true} smooth={true} offset={-90} onClick={openMenu} className="block px-2 py-4  transition duration-300 underline">About</Link></li>
-                <li><Link to='work' spy={true} smooth={true} offset={-90} onClick={openMenu} className="block px-2 py-4  transition duration-300 underline">My Work</Link></li>
-                <li><Link to='contact' spy={true} smooth={true} offset={-90} onClick={openMenu} className="block px-2 py-4  transition duration-300 underline">Contact</Link></li>
+            <div className='w-full h-full fixed right-0 transition-all duration-200'>
+              <ul className=" text-white pt-4 text-xl">
+                <li class="active"><Link to='hero' spy={true} smooth={true} offset={-90} onClick={openMenu} className="block px-2 pt-4 pb-2 border-b border-b-white w-fit mx-auto">Home</Link></li>
+                <li><Link to='about' spy={true} smooth={true} offset={-90} onClick={openMenu} className="block px-2 pt-4 pb-2 transition duration-300 border-b border-b-white w-fit mx-auto">About</Link></li>
+                <li><Link to='work' spy={true} smooth={true} offset={-90} onClick={openMenu} className="block px-2 pt-4 pb-2  transition duration-300 border-b border-b-white w-fit mx-auto">My Work</Link></li>
+                <li><Link to='contact' spy={true} smooth={true} offset={-90} onClick={openMenu} className="block px-2 pt-4 pb-2  transition duration-300 border-b border-b-white w-fit mx-auto">Contact</Link></li>
               </ul>
             </div>
           </div>

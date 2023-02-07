@@ -88,42 +88,42 @@ const Work = () => {
         <header className='text-white md:text-5xl text-3xl md:text-left text-center md:mx-96 mb-12 pink-border'>My Latest Work</header>
         <div className='grid grid-cols-1 md:grid-cols-2 md:mx-44 md:gap-x-5'>
         <div className='h-9 work-image work-image-5 cursor-pointer'>
-                <div className='h-full w-full bg-slate-900 opacity-0 hover:opacity-100 hover:border-2 hover:border-pink-400 transition-all duration-150'>
+                <div className='h-full w-full bg-slate-900 opacity-0 hover:opacity-100 hover:border-2 hover:border-[#FF66CC] transition-all duration-150'>
                     <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-semibold text-white'>Lashes By Andrea</h3>
                     <h4 className='text-white'>Small-business site</h4>
                     <button className='inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-white hover:text-slate-900 transition duration-150 ease-in-out mt-10' onClick={openLashesModal}>Learn More</button>
                 </div>
             </div>
             <div className='h-9 work-image work-image-6 cursor-pointer'>
-                <div className='h-full w-full bg-slate-900 opacity-0 hover:opacity-100 hover:border-2 hover:border-pink-400 transition-all duration-150'>
+                <div className='h-full w-full bg-slate-900 opacity-0 hover:opacity-100 hover:border-2 hover:border-[#FF66CC] transition-all duration-150'>
                     <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-semibold text-white'>Underground Skate Co.</h3>
                     <h4 className='text-white'>Small-business site</h4>
                     <button className='inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-white hover:text-slate-900 transition duration-150 ease-in-out mt-10' onClick={openUndergroundModal}>Learn More</button>
                 </div>
             </div>   
             <div className='h-9 work-image cursor-pointer'>
-                <div className='h-full w-full bg-slate-900 opacity-0 hover:opacity-100 hover:border-2 hover:border-pink-400 transition-all duration-150'>
+                <div className='h-full w-full bg-slate-900 opacity-0 hover:opacity-100 hover:border-2 hover:border-[#FF66CC] transition-all duration-150'>
                     <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-semibold text-white'>Nama Sushi</h3>
                     <h4 className='text-white'>Restaurant landing page</h4>
                     <button className='inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-white hover:text-slate-900 transition duration-150 ease-in-out mt-10' onClick={openNamaModal}>Learn More</button>
                 </div>
             </div>
             <div className='h-9 work-image work-image-2 cursor-pointer'>
-                <div className='h-full w-full bg-slate-900 opacity-0 hover:opacity-100 hover:border-2 hover:border-pink-400 transition-all duration-150'>
+                <div className='h-full w-full bg-slate-900 opacity-0 hover:opacity-100 hover:border-2 hover:border-[#FF66CC] transition-all duration-150'>
                     <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-semibold text-white'>Pupexpress</h3>
                     <h4 className='text-white'>E-commerce</h4>
                     <button className='inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-white hover:text-slate-900 transition duration-150 ease-in-out mt-10' onClick={openPupModal}>Learn More</button>
                 </div>
             </div>
             <div className='h-9 work-image work-image-3 cursor-pointer'>
-                <div className='h-full w-full bg-slate-900 opacity-0 hover:opacity-100 hover:border-2 hover:border-pink-400 transition-all duration-150'>
+                <div className='h-full w-full bg-slate-900 opacity-0 hover:opacity-100 hover:border-2 hover:border-[#FF66CC] transition-all duration-150'>
                     <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-semibold text-white'>Netflix</h3>
                     <h4 className='text-white'>Website clone</h4>
                     <button className='inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-white hover:text-slate-900 transition duration-150 ease-in-out mt-10' onClick={openNetflixModal}>Learn More</button>
                 </div>
             </div>
             <div className='h-9 work-image work-image-4 cursor-pointer'>
-                <div className='h-full w-full bg-slate-900 opacity-0 hover:opacity-100 hover:border-2 hover:border-pink-400 transition-all duration-150'>
+                <div className='h-full w-full bg-slate-900 opacity-0 hover:opacity-100 hover:border-2 hover:border-[#FF66CC] transition-all duration-150'>
                     <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-semibold text-white'>Alltrails</h3>
                     <h4 className='text-white'>AngularJS CRUD</h4>
                     <button className='inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-white hover:text-slate-900 transition duration-150 ease-in-out mt-10' onClick={openAlltrailsModal}>Learn More</button>

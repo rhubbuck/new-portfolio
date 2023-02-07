@@ -16,14 +16,14 @@ const Socials = () => {
             rel='noreferrer' 
             className='p-4
                 mx-6
-                py-2.5
                 bg-slate-900
                 text-white
                 border-2
                 border-white
                 font-medium
                 text-xs
-                leading-tight
+                leading-none
+                items-center
                 uppercase
                 shadow-md
                 hover:bg-white 
