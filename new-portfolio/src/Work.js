@@ -84,53 +84,81 @@ const Work = () => {
     }
 
   return (
-    <div className='md:mt-72 mt-28 font-jakarta'>
-        <header className='text-white md:text-5xl text-3xl md:text-left text-center md:mx-96 mb-12 pink-border'>My Latest Work</header>
-        <div className='grid grid-cols-1 md:grid-cols-2 md:mx-44 md:gap-x-5'>
-        <div className='h-9 work-image work-image-5 cursor-pointer'>
-                <div className='h-full w-full bg-slate-900 opacity-0 hover:opacity-100 hover:border-2 hover:border-[#FF66CC] transition-all duration-150'>
-                    <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-semibold text-white'>Lashes By Andrea</h3>
-                    <h4 className='text-white'>Small-business site</h4>
-                    <button className='inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-white hover:text-slate-900 transition duration-150 ease-in-out mt-10' onClick={openLashesModal}>Learn More</button>
+    <div className='h-min w-full absolute right-0 bottom-0 text-right'>
+    <ul>
+        <li onClick={openLashesModal} className="flex justify-end">
+            <p>2021 / Small-business site / React</p>
+            <h2 className='ml-4'>Lashes By Andrea</h2>
+        </li>
+        <li onClick={openUndergroundModal} className="flex justify-end">
+            <p>2022 / E-commerce / Liquid</p>
+            <h2 className='ml-4'>Undergound Skate Co.</h2>
+        </li>
+        <li onClick={openAlltrailsModal} className="flex justify-end">
+            <p>2022 / Angular / CRUD</p>
+            <h2 className='ml-4'>AllTrails</h2>
+        </li>
+        <li onClick={openNamaModal} className="flex justify-end">
+            <p>2020 / Restaurant Landing Page</p>
+            <h2 className='ml-4'>Name Sushi</h2>
+        </li>
+        <li onClick={openPupModal} className="flex justify-end">
+            <p>2020 / E-commerce / React</p>
+            <h2 className='ml-4'>PupExpress</h2>
+        </li>
+        <li onClick={openNetflixModal} className="flex justify-end">
+            <p>2021 / Website Clone</p>
+            <h2 className='ml-4'>Netflix Clone</h2>
+        </li>
+    </ul>
+        {/* <div className='bg-white w-fit mx-auto mb-12 pink-shadow p-2'>
+            <h2 className='md:text-5xl text-3xl md:text-left text-center font-poppins font-bold leading-loose uppercase'>My Latest Work</h2>
+        </div>
+        <div className='grid grid-cols-1 md:grid-cols-2 md:mx-44 md:gap-x-8 md:gap-y-8 font-anonymous font-bold'>
+        <div className='h-9 work-image work-image-5 cursor-pointer pink-shadow'>
+                <div className='h-full w-full bg-white opacity-0 hover:opacity-100 hover:border-2 transition-all duration-150'>
+                    <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-bold'>Lashes By Andrea</h3>
+                    <h4 className='text-lg'>Small-business site</h4>
+                    <button className='inline-block px-6 py-2 border-2 font-bold button-shadow border-black text-xl uppercase hover:bg-[#f2f2f2] transition duration-150 ease-in-out mt-10' onClick={openLashesModal}>Learn More</button>
                 </div>
             </div>
-            <div className='h-9 work-image work-image-6 cursor-pointer'>
-                <div className='h-full w-full bg-slate-900 opacity-0 hover:opacity-100 hover:border-2 hover:border-[#FF66CC] transition-all duration-150'>
-                    <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-semibold text-white'>Underground Skate Co.</h3>
-                    <h4 className='text-white'>Small-business site</h4>
-                    <button className='inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-white hover:text-slate-900 transition duration-150 ease-in-out mt-10' onClick={openUndergroundModal}>Learn More</button>
+            <div className='h-9 work-image work-image-6 cursor-pointer pink-shadow'>
+            <div className='h-full w-full bg-white opacity-0 hover:opacity-100 hover:border-2 transition-all duration-150'>
+                    <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-bold'>Undergound Skate Co.</h3>
+                    <h4 className='text-lg'>Small-business site</h4>
+                    <button className='inline-block px-6 py-2 border-2 font-bold button-shadow border-black text-xl uppercase hover:bg-[#f2f2f2] transition duration-150 ease-in-out mt-10' onClick={openUndergroundModal}>Learn More</button>
                 </div>
             </div>   
-            <div className='h-9 work-image cursor-pointer'>
-                <div className='h-full w-full bg-slate-900 opacity-0 hover:opacity-100 hover:border-2 hover:border-[#FF66CC] transition-all duration-150'>
-                    <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-semibold text-white'>Nama Sushi</h3>
-                    <h4 className='text-white'>Restaurant landing page</h4>
-                    <button className='inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-white hover:text-slate-900 transition duration-150 ease-in-out mt-10' onClick={openNamaModal}>Learn More</button>
+            <div className='h-9 work-image cursor-pointer pink-shadow'>
+            <div className='h-full w-full bg-white opacity-0 hover:opacity-100 hover:border-2 transition-all duration-150'>
+                    <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-bold'>Nama Sushi</h3>
+                    <h4 className='text-lg'>Restaurant Landing Page</h4>
+                    <button className='inline-block px-6 py-2 border-2 font-bold button-shadow border-black text-xl uppercase hover:bg-[#f2f2f2] transition duration-150 ease-in-out mt-10' onClick={openNamaModal}>Learn More</button>
                 </div>
             </div>
-            <div className='h-9 work-image work-image-2 cursor-pointer'>
-                <div className='h-full w-full bg-slate-900 opacity-0 hover:opacity-100 hover:border-2 hover:border-[#FF66CC] transition-all duration-150'>
-                    <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-semibold text-white'>Pupexpress</h3>
-                    <h4 className='text-white'>E-commerce</h4>
-                    <button className='inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-white hover:text-slate-900 transition duration-150 ease-in-out mt-10' onClick={openPupModal}>Learn More</button>
+            <div className='h-9 work-image work-image-2 cursor-pointer pink-shadow'>
+            <div className='h-full w-full bg-white opacity-0 hover:opacity-100 hover:border-2 transition-all duration-150'>
+                    <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-bold'>PupExpress</h3>
+                    <h4 className='text-lg'>E-commerce</h4>
+                    <button className='inline-block px-6 py-2 border-2 font-bold button-shadow border-black text-xl uppercase hover:bg-[#f2f2f2] transition duration-150 ease-in-out mt-10' onClick={openPupModal}>Learn More</button>
                 </div>
             </div>
-            <div className='h-9 work-image work-image-3 cursor-pointer'>
-                <div className='h-full w-full bg-slate-900 opacity-0 hover:opacity-100 hover:border-2 hover:border-[#FF66CC] transition-all duration-150'>
-                    <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-semibold text-white'>Netflix</h3>
-                    <h4 className='text-white'>Website clone</h4>
-                    <button className='inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-white hover:text-slate-900 transition duration-150 ease-in-out mt-10' onClick={openNetflixModal}>Learn More</button>
+            <div className='h-9 work-image work-image-3 cursor-pointer pink-shadow'>
+            <div className='h-full w-full bg-white opacity-0 hover:opacity-100 hover:border-2 transition-all duration-150'>
+                    <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-bold'>Netflix</h3>
+                    <h4 className='text-lg'>Website Clone</h4>
+                    <button className='inline-block px-6 py-2 border-2 font-bold button-shadow border-black text-xl uppercase hover:bg-[#f2f2f2] transition duration-150 ease-in-out mt-10' onClick={openNetflixModal}>Learn More</button>
                 </div>
             </div>
-            <div className='h-9 work-image work-image-4 cursor-pointer'>
-                <div className='h-full w-full bg-slate-900 opacity-0 hover:opacity-100 hover:border-2 hover:border-[#FF66CC] transition-all duration-150'>
-                    <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-semibold text-white'>Alltrails</h3>
-                    <h4 className='text-white'>AngularJS CRUD</h4>
-                    <button className='inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-white hover:text-slate-900 transition duration-150 ease-in-out mt-10' onClick={openAlltrailsModal}>Learn More</button>
+            <div className='h-9 work-image work-image-4 cursor-pointer pink-shadow'>
+            <div className='h-full w-full bg-white opacity-0 hover:opacity-100 hover:border-2 transition-all duration-150'>
+                    <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-bold'>All Trails</h3>
+                    <h4 className='text-lg'>AngularJS Crud</h4>
+                    <button className='inline-block px-6 py-2 border-2 font-bold button-shadow border-black text-xl uppercase hover:bg-[#f2f2f2] transition duration-150 ease-in-out mt-10' onClick={openAlltrailsModal}>Learn More</button>
                 </div>
             </div>
      
-        </div>
+        </div> */}
         {modalOpen && <Modal 
                             handleClick={handleClick} 
                             title={title} subtitle={subtitle} 

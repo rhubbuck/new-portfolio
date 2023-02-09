@@ -1,6 +1,51 @@
 .App {
   text-align: center;
-  background-color: #0f172a;
+  /* background-color: #121212; */
+}
+
+/* Hero Class Transitions */
+.hero-class-enter,
+.work-class-enter,
+.contact-class-enter {
+  opacity: 0;
+  display: block;
+}
+
+.hero-class-enter-active,
+.work-class-enter-active,
+.contact-class-enter-active {
+  opacity: 1;
+  transition: all 2000ms;
+  transition-timing-function: ease-in;
+}
+
+.hero-class-enter-done,
+.hero-class-enter-done,
+.hero-class-enter-done {
+  opacity: 1;
+  display: block !important;
+  z-index: 10;
+}
+
+.hero-class-exit
+.work-class-exit,
+.contact-class-exit {
+  opacity: 1;
+}
+
+.hero-class-exit-active,
+.work-class-exit-active,
+.contact-class-exit-active {
+  opacity: 0;
+  transition: all 1000ms;
+  transition-timing-function: ease-in;
+}
+
+.hero-class-exit-done,
+.work-class-exit-done,
+.contact-class-exit-done {
+  opacity: 0;
+  display: none;
 }
 
 .App-logo {

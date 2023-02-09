@@ -7,15 +7,19 @@ import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scro
 const Footer = () => {
   return (
     <div className='relative'>
-        <div className='flex flex-row justify-between py-6 md:py-14 mt-10 md:px-80 px-8 text-white bg-slate-900 font-jakarta'>
+        <div className='flex flex-row justify-between py-6 md:py-14 mt-10 md:px-80 px-8 text-white text-lg bg-[#121212] border-t-4 border-t-white font-anonymous font-bold'>
             <ul>
-                <header className='text-xl mb-4'>Useful Links</header>
+              <div className='bg-white text-black w-fit mx-auto mb-12 pink-shadow p-2'>
+                <h2 className='md:text-2xl text-xl md:text-left text-center font-poppins font-bold leading-loose uppercase'>Useful Links</h2>
+              </div>
                 <li className='m-2 cursor-pointer'><a href={Resume} target='_blank' rel='noreferrer'>Resume</a></li>
                 <li className='m-2'><a href='https://github.com/rhubbuck' target="_blank" rel='noreferrer' className='m-2 cursor-pointer'>Github</a></li>
                 <li className='m-2'><a href='https://www.linkedin.com/in/ryan-hubbuck/' target="_blank" rel='noreferrer' className='m-2 cursor-pointer'>LinkedIn</a></li>
             </ul>
             <ul>
-                <header className='text-xl mb-4'>Contact Me</header>
+              <div className='bg-white text-black w-fit mx-auto mb-12 pink-shadow p-2'>
+                <h2 className='md:text-2xl text-xl md:text-left text-center font-poppins font-bold leading-loose uppercase'>Contact Me</h2>
+              </div>
                 <li className='m-2 cursor-pointer'><a href = "mailto:rhubbuck@example.com">rhubbuck@gmail.com</a></li>
                 <li className='m-2'>(865) 804-0597</li>
                 <li><br></br></li>
