@@ -86,29 +86,29 @@ const Work = () => {
   return (
     <div className='h-min w-full absolute right-0 bottom-0 text-right'>
     <ul>
-        <li onClick={openLashesModal} className="flex justify-end">
-            <p>2021 / Small-business site / React</p>
-            <h2 className='ml-4'>Lashes By Andrea</h2>
+        <li onClick={openLashesModal} className="flex my-2 justify-end align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+            <div className='work-subtitle font-anonymous font-bold'>2021 / Small-business site / React</div>
+            <div className='work-title font-raleway'>Lashes By Andrea</div>
         </li>
-        <li onClick={openUndergroundModal} className="flex justify-end">
-            <p>2022 / E-commerce / Liquid</p>
-            <h2 className='ml-4'>Undergound Skate Co.</h2>
+        <li onClick={openUndergroundModal} className="flex my-2 justify-end align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+            <div className='work-subtitle font-anonymous font-bold'>2022 / E-commerce / Liquid</div>
+            <div className='work-title font-raleway'>Underground Skate Co.</div>
         </li>
-        <li onClick={openAlltrailsModal} className="flex justify-end">
-            <p>2022 / Angular / CRUD</p>
-            <h2 className='ml-4'>AllTrails</h2>
+        <li onClick={openAlltrailsModal} className="flex my-2 justify-end align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+            <div className='work-subtitle font-anonymous font-bold'>2022 / Angular / CRUD</div>
+            <div className='work-title font-raleway'>AllTrails</div>
         </li>
-        <li onClick={openNamaModal} className="flex justify-end">
-            <p>2020 / Restaurant Landing Page</p>
-            <h2 className='ml-4'>Name Sushi</h2>
+        <li onClick={openNamaModal} className="flex my-2 justify-end align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+            <div className='work-subtitle font-anonymous font-bold'>2020 / Restaurant Landing Page</div>
+            <div className='work-title font-raleway'>Nama Sushi</div>
         </li>
-        <li onClick={openPupModal} className="flex justify-end">
-            <p>2020 / E-commerce / React</p>
-            <h2 className='ml-4'>PupExpress</h2>
+        <li onClick={openPupModal} className="flex my-2 justify-end align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+            <div className='work-subtitle font-anonymous font-bold'>2020 / E-commerce / React</div>
+            <div className='work-title font-raleway'>PupExpress</div>
         </li>
-        <li onClick={openNetflixModal} className="flex justify-end">
-            <p>2021 / Website Clone</p>
-            <h2 className='ml-4'>Netflix Clone</h2>
+        <li onClick={openNetflixModal} className="flex my-2 justify-end align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+            <div className='work-subtitle font-anonymous font-bold'>2021 / Website Clone</div>
+            <div className='work-title font-raleway'>Netflix Clone</div>
         </li>
     </ul>
         {/* <div className='bg-white w-fit mx-auto mb-12 pink-shadow p-2'>

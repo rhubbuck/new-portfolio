@@ -6,14 +6,11 @@ import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scro
 
 const Hero = () => {
   return (
-    <div className='w-full h-min absolute text-right max-w-[14rem] right-0 bottom-0'>
-        <div className='font-anonymous font-bold'>
-            <p>My name is Ryan Hubbuck, and I'm a front-end developer currently living in Knoxville, Tennessee.
-            I am a self-taught front-end developer who has been working freelance since 2020. 
-            Coding is my passion, and I am dedicated to staying up-to-date on new technologies and platforms.
-            If you are in need of help with 
-          your personal or small-business website, I would love the opportunity to help you make 
-          the most of your online presence.
+    <div className='w-full h-min absolute text-left max-w-[14rem] right-0 bottom-0'>
+        <div className='font-anonymous font-bold leading-tight'>
+            <p>I am a front-end developer in Knoxville, Tennessee, and development is my passion. I enjoy building aesthetic and functional 
+            applications, and I am dedicated to staying up-to-date on new technologies and platforms. If you are in need of help with your 
+            personal or small-business website, I would love the opportunity to help you make the most of your online presence.
             </p>
         </div>
         {/* <div className='absolute top-0 left-0 h-full w-full left-hero-svg'></div> */}

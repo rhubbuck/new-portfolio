@@ -17,6 +17,21 @@ code {
     monospace;
 }
 
+.work-title {
+  font-size: 38px;
+  line-height: 1;
+  height: min-content;
+  margin-left: 16px;
+}
+
+.work-subtitle {
+  font-size: 16px;
+  line-height: 1;
+  height:min-content;
+  margin-top: auto;
+  margin-bottom: 3px;
+}
+
 .left-hero-svg {
   background-image: url(./images/svg-portfolio-bg.png);
   background-position: center;

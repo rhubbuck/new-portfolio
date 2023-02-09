@@ -8,7 +8,8 @@ module.exports = {
         'open-sans': [`'Open Sans', 'sans-serif'`],
         'jakarta': [`'Plus Jakarta Sans', 'sans-serif'`],
         'poppins': [`'Poppins', 'sans-serif'`],
-        'anonymous': [`'Anonymous Pro', 'sans-serif'`]
+        'anonymous': [`'Anonymous Pro', 'sans-serif'`],
+        'raleway': [`'Raleway', 'sans-serif'`]
       }
     },
   },
