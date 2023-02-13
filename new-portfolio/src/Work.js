@@ -86,79 +86,37 @@ const Work = () => {
   return (
     <div className='h-min w-full absolute right-0 bottom-0 text-right'>
     <ul>
-        <li onClick={openLashesModal} className="flex my-2 justify-end align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
-            <div className='work-subtitle font-anonymous font-bold'>2021 / Small-business site / React</div>
+        <li onClick={openLashesModal} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+            <div className='work-subtitle font-anonymous md:font-bold hidden md:block'>2021 / Small-business site / React</div>
+            <div className='work-subtitle font-anonymous md:font-bold block md:hidden'>2021 / React</div>
             <div className='work-title font-raleway'>Lashes By Andrea</div>
         </li>
-        <li onClick={openUndergroundModal} className="flex my-2 justify-end align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
-            <div className='work-subtitle font-anonymous font-bold'>2022 / E-commerce / Liquid</div>
+        <li onClick={openUndergroundModal} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+            <div className='work-subtitle font-anonymous md:font-bold hidden md:block'>2022 / E-commerce / Liquid</div>
+            <div className='work-subtitle font-anonymous md:font-bold block md:hidden'>2022 / Liquid</div>
             <div className='work-title font-raleway'>Underground Skate Co.</div>
         </li>
-        <li onClick={openAlltrailsModal} className="flex my-2 justify-end align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
-            <div className='work-subtitle font-anonymous font-bold'>2022 / Angular / CRUD</div>
+        <li onClick={openAlltrailsModal} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+            <div className='work-subtitle font-anonymous md:font-bold hidden md:block'>2022 / CRUD / Angular</div>
+            <div className='work-subtitle font-anonymous md:font-bold block md:hidden'>2022 / Angular</div>
             <div className='work-title font-raleway'>AllTrails</div>
         </li>
-        <li onClick={openNamaModal} className="flex my-2 justify-end align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
-            <div className='work-subtitle font-anonymous font-bold'>2020 / Restaurant Landing Page</div>
+        <li onClick={openNamaModal} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+            <div className='work-subtitle font-anonymous md:font-bold hidden md:block'>2020 / Restaurant Landing Page</div>
+            <div className='work-subtitle font-anonymous md:font-bold block md:hidden'>2020 / React</div>
             <div className='work-title font-raleway'>Nama Sushi</div>
         </li>
-        <li onClick={openPupModal} className="flex my-2 justify-end align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
-            <div className='work-subtitle font-anonymous font-bold'>2020 / E-commerce / React</div>
+        <li onClick={openPupModal} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+            <div className='work-subtitle font-anonymous md:font-bold hidden md:block'>2020 / E-commerce / React</div>
+            <div className='work-subtitle font-anonymous md:font-bold block md:hidden'>2020 / React</div>
             <div className='work-title font-raleway'>PupExpress</div>
         </li>
-        <li onClick={openNetflixModal} className="flex my-2 justify-end align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
-            <div className='work-subtitle font-anonymous font-bold'>2021 / Website Clone</div>
+        <li onClick={openNetflixModal} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+            <div className='work-subtitle font-anonymous md:font-bold hidden md:block'>2021 / Website Clone</div>
+            <div className='work-subtitle font-anonymous md:font-bold block md:hidden'>2021 / React</div>
             <div className='work-title font-raleway'>Netflix Clone</div>
         </li>
     </ul>
-        {/* <div className='bg-white w-fit mx-auto mb-12 pink-shadow p-2'>
-            <h2 className='md:text-5xl text-3xl md:text-left text-center font-poppins font-bold leading-loose uppercase'>My Latest Work</h2>
-        </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 md:mx-44 md:gap-x-8 md:gap-y-8 font-anonymous font-bold'>
-        <div className='h-9 work-image work-image-5 cursor-pointer pink-shadow'>
-                <div className='h-full w-full bg-white opacity-0 hover:opacity-100 hover:border-2 transition-all duration-150'>
-                    <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-bold'>Lashes By Andrea</h3>
-                    <h4 className='text-lg'>Small-business site</h4>
-                    <button className='inline-block px-6 py-2 border-2 font-bold button-shadow border-black text-xl uppercase hover:bg-[#f2f2f2] transition duration-150 ease-in-out mt-10' onClick={openLashesModal}>Learn More</button>
-                </div>
-            </div>
-            <div className='h-9 work-image work-image-6 cursor-pointer pink-shadow'>
-            <div className='h-full w-full bg-white opacity-0 hover:opacity-100 hover:border-2 transition-all duration-150'>
-                    <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-bold'>Undergound Skate Co.</h3>
-                    <h4 className='text-lg'>Small-business site</h4>
-                    <button className='inline-block px-6 py-2 border-2 font-bold button-shadow border-black text-xl uppercase hover:bg-[#f2f2f2] transition duration-150 ease-in-out mt-10' onClick={openUndergroundModal}>Learn More</button>
-                </div>
-            </div>   
-            <div className='h-9 work-image cursor-pointer pink-shadow'>
-            <div className='h-full w-full bg-white opacity-0 hover:opacity-100 hover:border-2 transition-all duration-150'>
-                    <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-bold'>Nama Sushi</h3>
-                    <h4 className='text-lg'>Restaurant Landing Page</h4>
-                    <button className='inline-block px-6 py-2 border-2 font-bold button-shadow border-black text-xl uppercase hover:bg-[#f2f2f2] transition duration-150 ease-in-out mt-10' onClick={openNamaModal}>Learn More</button>
-                </div>
-            </div>
-            <div className='h-9 work-image work-image-2 cursor-pointer pink-shadow'>
-            <div className='h-full w-full bg-white opacity-0 hover:opacity-100 hover:border-2 transition-all duration-150'>
-                    <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-bold'>PupExpress</h3>
-                    <h4 className='text-lg'>E-commerce</h4>
-                    <button className='inline-block px-6 py-2 border-2 font-bold button-shadow border-black text-xl uppercase hover:bg-[#f2f2f2] transition duration-150 ease-in-out mt-10' onClick={openPupModal}>Learn More</button>
-                </div>
-            </div>
-            <div className='h-9 work-image work-image-3 cursor-pointer pink-shadow'>
-            <div className='h-full w-full bg-white opacity-0 hover:opacity-100 hover:border-2 transition-all duration-150'>
-                    <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-bold'>Netflix</h3>
-                    <h4 className='text-lg'>Website Clone</h4>
-                    <button className='inline-block px-6 py-2 border-2 font-bold button-shadow border-black text-xl uppercase hover:bg-[#f2f2f2] transition duration-150 ease-in-out mt-10' onClick={openNetflixModal}>Learn More</button>
-                </div>
-            </div>
-            <div className='h-9 work-image work-image-4 cursor-pointer pink-shadow'>
-            <div className='h-full w-full bg-white opacity-0 hover:opacity-100 hover:border-2 transition-all duration-150'>
-                    <h3 className='md:pt-20 pt-6 pb-8 text-3xl font-bold'>All Trails</h3>
-                    <h4 className='text-lg'>AngularJS Crud</h4>
-                    <button className='inline-block px-6 py-2 border-2 font-bold button-shadow border-black text-xl uppercase hover:bg-[#f2f2f2] transition duration-150 ease-in-out mt-10' onClick={openAlltrailsModal}>Learn More</button>
-                </div>
-            </div>
-     
-        </div> */}
         {modalOpen && <Modal 
                             handleClick={handleClick} 
                             title={title} subtitle={subtitle} 
