@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 
-const Modal = ({handleClick, title, subtitle, description, link, image1, liveLink, codeLink}) => {
+const Modal = ({handleClick, title, subtitle, description, link, image1, liveLink, alt}) => {
     let photo1 = require(`${image1}`);
 
   return (
@@ -19,10 +19,12 @@ const Modal = ({handleClick, title, subtitle, description, link, image1, liveLin
                     <p className='md:mt-5 mt-3 text-[16px] text-center'>{subtitle}</p>
                     <p className='md:mt-5 text-md mt-3 w-[90%] mx-auto text-[16px] text-center'>{description}</p>
                     <div className='my-4'>
-                        <a href={liveLink} target="_blank" rel='noreferrer'>
-                            <button type="button" className="inline-block px-4 py-1 border-2 font-bold button-shadow border-black uppercase hover:bg-[#f2f2f2] transition duration-150 ease-in-out cursor-pointer">Live Site</button>
-                        </a>
-                        <a href={codeLink} target="_blank" rel='noreferrer'>
+                        {alt ? null :
+                            <a href={liveLink} target="_blank" rel='noreferrer'>
+                                <button type="button" className="inline-block px-4 py-1 border-2 font-bold button-shadow border-black uppercase hover:bg-[#f2f2f2] transition duration-150 ease-in-out cursor-pointer">Live Site</button>
+                            </a>
+                        }
+                        <a href={link} target="_blank" rel='noreferrer'>
                             <button type="button" className="inline-block px-4 py-1 ml-4 border-2 font-bold button-shadow border-black uppercase hover:bg-[#f2f2f2] transition duration-150 ease-in-out cursor-pointer">Source Code</button>
                         </a>
                     </div>

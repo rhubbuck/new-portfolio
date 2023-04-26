@@ -11,110 +11,81 @@ const Work = () => {
     const [ link, setLink] = useState('');
     const [ image1, setImage1] = useState();
     const [ liveLink, setLiveLink] = useState();
-    const [ codeLink, setCodeLink] = useState();
+    const [ alt, setAlt] = useState();
 
     const handleClick = () => {
         setModalOpen(false);
       }
 
-    const openNamaModal = () => {
-        setTitle('Nama');
-        setSubtitle('React/Firebase');
-        setDescription('Mock restaurant landing page with restaurant information and menus. Reservation information is saved into a backend database to be reviewed and handled by restaurant management/staff.');
-        setLink('https://github.com/rhubbuck/react-restaurant');
-        setImage1('./images/nama1.png');
-        setLiveLink('https://rhubbuck.github.io/react-restaurant/');
-        setCodeLink('https://github.com/rhubbuck/react-restaurant');
+
+    const openModal = (title, subtitle, desc, link, image1, liveLink) => {
+        setTitle(title);
+        setSubtitle(subtitle);
+        setDescription(desc);
+        setLink(link);
+        setImage1(image1);
+        setLiveLink(liveLink);
         setModalOpen(true);
+        setAlt(false);
     }
 
-    const openPupModal = () => {
-        setTitle('Pupexpress');
-        setSubtitle('React/Commerce.js/Stripe.js');
-        setDescription('E-commerce site created using the Angular framework. I used Commerce.js for the back-end, and Stripe.js was used for the final card payments/processings.');
-        setLink('https://github.com/rhubbuck/react-ecommerce');
-        setImage1('./images/pupexpress.png');
-        setLiveLink('https://rhubbuck.github.io/react-ecommerce/');
-        setCodeLink('https://github.com/rhubbuck/react-ecommerce');
+    const openAltModal = (title, subtitle, desc, link, image1 ) => {
+        setTitle(title);
+        setSubtitle(subtitle);
+        setDescription(desc);
+        setLink(link);
+        setImage1(image1);
         setModalOpen(true);
-    }
-
-    const openNetflixModal = () => {
-        setTitle('Netflix Clone');
-        setSubtitle('React/TMDB API');
-        setDescription('Mock site used as a display of ability to capture the styling and overall feel of a website or project. Movies, shows, and like percentage are pulled from an API. ');
-        setLink('https://github.com/rhubbuck/API-clone');
-        setImage1('./images/netflix.png');
-        setLiveLink('https://rhubbuck.github.io/API-clone/');
-        setCodeLink('https://github.com/rhubbuck/API-clone');
-        setModalOpen(true);
-    }
-
-    const openAlltrailsModal = () => {
-        setTitle('AllTrails');
-        setSubtitle('AngularJS/Firebase');
-        setDescription('Firebase authentication was used to create and store user profiles. A main feed page shows all trails added by all users, while there is a seperate page to view and edit your own trail posts.');
-        setLink('https://github.com/rhubbuck/angular-crud');
-        setImage1('./images/alltrails.png');
-        setModalOpen(true);
-        setLiveLink('https://rhubbuck.github.io/angular-crud/');
-        setCodeLink('https://github.com/rhubbuck/angular-crud');
-    }
-
-    const openLashesModal = () => {
-        setTitle('Lashes By Andrea');
-        setSubtitle('React');
-        setDescription('Small business landing page with integrated scheduling, contact for clients, services, and a gallery.');
-        setLink('https://github.com/rhubbuck/react-lashes-website');
-        setImage1('./images/lashes.png');
-        setModalOpen(true);
-        setLiveLink('https://lashes-by-andrea.com/');
-        setCodeLink('https://github.com/rhubbuck/react-lashes-website');
-    }
-
-    const openUndergroundModal = () => {
-        setTitle('Underground Skate');
-        setSubtitle('Shopify Hydrogen');
-        setDescription('E-commerce page for a small business. Shopify is used for handling the back-end, while their new Hydrogen framework is used for the front-end.');
-        setLink('https://github.com/rhubbuck/Hydrogen-New');
-        setImage1('./images/underground.png');
-        setLiveLink('https://demo-image-lrxjdbohrq-ue.a.run.app/');
-        setCodeLink('https://github.com/rhubbuck/Hydrogen-New');
-        setModalOpen(true);
+        setAlt(true);
     }
 
   return (
     <div className='h-min w-full absolute right-0 bottom-0 text-right'>
     <ul>
-        <li onClick={openLashesModal} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
-            <div className='work-subtitle font-anonymous md:font-bold hidden md:block'>2021 / Small-business site / React</div>
-            <div className='work-subtitle font-anonymous md:font-bold block md:hidden'>2021 / React</div>
-            <div className='work-title font-raleway'>Lashes By Andrea</div>
+        <li onClick={() => {openAltModal("A* Search Visualizer", "Python/tkinter/Pygame", "This program utilizes the A Star Search Algorithm to find the shortest route between two points. Tkinter and Pygame are used to create the GUI and allow users to set points and draw walls.", "https://github.com/rhubbuck/MazeAStar", "./images/astar.png")}} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+            <div className='work-subtitle font-anonymous md:font-bold hidden md:block'>2020 / Python</div>
+            <div className='work-subtitle font-anonymous md:font-bold block md:hidden'>2020 / Python</div>
+            <div className='work-title font-raleway'>A* Search Visualizer</div>
         </li>
-        <li onClick={openUndergroundModal} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
-            <div className='work-subtitle font-anonymous md:font-bold hidden md:block'>2022 / E-commerce / Liquid</div>
-            <div className='work-subtitle font-anonymous md:font-bold block md:hidden'>2022 / Liquid</div>
-            <div className='work-title font-raleway'>Underground Skate Co.</div>
-        </li>
-        <li onClick={openAlltrailsModal} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+        <li onClick={() => {openModal("AllTrails", "AngularJS/Firebase", "User profiles and posts are stored in a noSQL database and authentication is required for users to sign-in and create accounts. Within the application users can view a main feed of all posts, create their own trail posts of various types, and change or delete their old posts through database manipulation.", "https://github.com/rhubbuck/angular-crud", "./images/alltrails.png", "https://rhubbuck.github.io/angular-crud/")}} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
             <div className='work-subtitle font-anonymous md:font-bold hidden md:block'>2022 / CRUD / Angular</div>
             <div className='work-subtitle font-anonymous md:font-bold block md:hidden'>2022 / Angular</div>
             <div className='work-title font-raleway'>AllTrails</div>
         </li>
-        <li onClick={openNamaModal} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+        <li onClick={() => {openModal("Lashes By Andrea", "React", "Small business landing page with integrated scheduling, contact for clients, services, and a gallery.", "https://github.com/rhubbuck/react-lashes-website", "./images/lashes.png", "https://lashes-by-andrea.com/")}} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+            <div className='work-subtitle font-anonymous md:font-bold hidden md:block'>2021 / Small-business site / React</div>
+            <div className='work-subtitle font-anonymous md:font-bold block md:hidden'>2021 / React</div>
+            <div className='work-title font-raleway'>Lashes By Andrea</div>
+        </li>
+        <li onClick={() => {openAltModal("Underground Skate", "React/Rest API/Hydrogen", "E-commerce page for a small business. Shopify is used for handling the back-end, while their new Hydrogen framework, React, and PHP are used for the front-end.", "https://github.com/rhubbuck/Hydrogen-New", "./images/underground.png")}} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+            <div className='work-subtitle font-anonymous md:font-bold hidden md:block'>2022 / E-commerce / Liquid</div>
+            <div className='work-subtitle font-anonymous md:font-bold block md:hidden'>2022 / Liquid</div>
+            <div className='work-title font-raleway'>Underground Skate</div>
+        </li>
+        <li onClick={() => {openModal("Nama Sushi", "React/Firebase", "Mock restaurant landing page with restaurant information, menus, and the ability to make reservations. Reservation information is saved into a backend sql database to be reviewed and handled by restaurant management/staff.", "https://github.com/rhubbuck/react-restaurant", "./images/nama1.png", "https://rhubbuck.github.io/react-restaurant/")}} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
             <div className='work-subtitle font-anonymous md:font-bold hidden md:block'>2020 / Restaurant Landing Page</div>
             <div className='work-subtitle font-anonymous md:font-bold block md:hidden'>2020 / React</div>
             <div className='work-title font-raleway'>Nama Sushi</div>
         </li>
-        <li onClick={openPupModal} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+        <li onClick={() => {openModal("PupExpress", "React/Commerce.js/Stripe.js", "E-commerce site created using the React framework. Commerce.js is used for the back-end inventory management through a database, and Stripe.js was used for the final card payments/processings.", "https://github.com/rhubbuck/react-ecommerce", "./images/pupexpress.png", "https://rhubbuck.github.io/react-ecommerce/")}} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
             <div className='work-subtitle font-anonymous md:font-bold hidden md:block'>2020 / E-commerce / React</div>
             <div className='work-subtitle font-anonymous md:font-bold block md:hidden'>2020 / React</div>
             <div className='work-title font-raleway'>PupExpress</div>
         </li>
-        <li onClick={openNetflixModal} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+        <li onClick={() => {openModal("Netflix Clone", "React/Rest API", "Mock site used as a display of ability to capture the styling and overall feel of a website or project. Movies, shows, and like percentage are pulled from an API prior to proper formatting and rendering.", "https://github.com/rhubbuck/API-clone", "./images/netflix.png", "https://rhubbuck.github.io/API-clone/")}} className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
             <div className='work-subtitle font-anonymous md:font-bold hidden md:block'>2021 / Website Clone</div>
             <div className='work-subtitle font-anonymous md:font-bold block md:hidden'>2021 / React</div>
             <div className='work-title font-raleway'>Netflix Clone</div>
+        </li>
+        <li onClick={() => {openAltModal("Inventory Manager", "C++", "This program can handle collections/inventories of any kind. Complete features include reading in a file, outputting a backup file, presenting itemized lists with quantities of items and charts, the ability to search for items and add values, and tabulating totals of total collection quantity and value.", "https://github.com/rhubbuck/grocery_inventory", "./images/item-manager.png")}}  className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+            <div className='work-subtitle font-anonymous md:font-bold hidden md:block'>2023 / C++</div>
+            <div className='work-subtitle font-anonymous md:font-bold block md:hidden'>2023 / C++</div>
+            <div className='work-title font-raleway'>Inventory Manager</div>
+        </li>
+        <li onClick={() => {openAltModal("Pong", "Python/Pygame", "I recreated the classic game Pong within Python using Pygame. Seperate inputs allow users to control the paddles independenty, and the ball reacts dynamically to walls and paddles to accelerate and change angles accordingly.", "https://github.com/rhubbuck/PythonPongGame", "./images/pong.png")}}  className="flex my-2 md:justify-end justify-between align-baseline cursor-pointer hover:scale-105 hover:transition-all hover:duration-100">
+            <div className='work-subtitle font-anonymous md:font-bold hidden md:block'>2020 / Python</div>
+            <div className='work-subtitle font-anonymous md:font-bold block md:hidden'>2020 / Python</div>
+            <div className='work-title font-raleway'>Pong</div>
         </li>
     </ul>
         {modalOpen && <Modal 
@@ -124,7 +95,7 @@ const Work = () => {
                             link={link} 
                             image1={image1}
                             liveLink={liveLink}
-                            codeLink={codeLink}
+                            alt={alt}
                             />}
     </div>
   )

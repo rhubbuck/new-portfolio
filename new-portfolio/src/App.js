@@ -42,10 +42,10 @@ function App() {
             <div className='text-left'>
               <h1 className='font-raleway text-[28px] md:text-[51px] font-thin'>Ryan Hubbuck</h1>
               <h2 className='font-raleway lg:text-[16px]'>-Software Developer-</h2>
-              <ul className='font-anonymous font-bold text-[14px] md:text-[16px]'>
-                <li className='cursor-pointer' onClick={showHome}>Home</li>
-                <li className='cursor-pointer' onClick={showWork}>Work</li>
-                <li className='cursor-pointer' onClick={showContact}>Contact</li>
+              <ul className='font-anonymous md:font-bold text-[14px] md:text-[16px]'>
+                <li className='cursor-pointer my-1 md:my-0' onClick={showHome}>Home</li>
+                <li className='cursor-pointer my-1 md:my-0' onClick={showWork}>Work</li>
+                <li className='cursor-pointer my-1 md:my-0' onClick={showContact}>Contact</li>
               </ul>
           </div>
           <SocialSidebar />
